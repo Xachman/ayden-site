@@ -1,3 +1,13 @@
-<h1 style="background: red; text-align: center; ">Hi Ayden</h1>
+<h1 id="title" style="background: red; text-align: center; width: 400px; ">Hi Ayden</h1>
 
 <p>Ayden is a cool guy and he eats pizza or something</p>
+
+<script>
+    var deg = 0;
+    function spin() {
+        var el = document.getElementById("title");
+        deg = deg+1;
+        el.style.transform = "rotate("+deg+"deg)";
+    }   
+    setInterval(spin, 10); 
+</script>
